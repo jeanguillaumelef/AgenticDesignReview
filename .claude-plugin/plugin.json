@@ -1,5 +1,5 @@
 {
   "name": "agentic-design-review",
   "description": "Claude Code skills that audit a code base for software design issues and produce an evidence-backed, prioritized report.",
-  "version": "0.1.0"
+  "version": "0.2.0"
 }
