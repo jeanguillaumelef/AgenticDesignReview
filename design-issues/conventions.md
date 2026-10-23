@@ -29,6 +29,14 @@ If the hotspot file produced by family 07 is present:
 
 If the hotspot file is absent, use default severities and say so in the report header. Family 07 findings are never adjusted (they are the hotspot data).
 
+**Hotspot file contract:** `design-review/hotspots.json` at the repository root, produced by family 07:
+
+```json
+{ "window": "12 months", "files": [{ "path": "src/order/Order.java", "rank": 1 }] }
+```
+
+`files` is ordered by `rank` (1 = hottest). Consumers read it if present and degrade gracefully if not.
+
 ## History analysis rules (family 07)
 
 - The history script **streams and aggregates** `git log` output; the raw log never enters the model's context. Output is a fixed-size summary (top N hotspots, top N co-change pairs/clusters) regardless of history length.
