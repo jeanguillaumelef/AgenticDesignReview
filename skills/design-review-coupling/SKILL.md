@@ -9,10 +9,12 @@ Audit the repository in the working directory for the coupling family. You never
 
 ## 1. Load the rules (do not restate them from memory)
 
-Read both, in this order, from the plugin's `design-issues/` directory:
+Read both, in this order. They live in the plugin, not in the repo under review, so use the plugin root path:
 
-1. `design-issues/conventions.md` - severity rubric, hotspot adjustment, ownership rule, context order.
-2. `design-issues/families/01-coupling.md` - the issues you own: COU-01 to COU-04, with heuristics and false positives.
+1. `${CLAUDE_PLUGIN_ROOT}/design-issues/conventions.md` - severity rubric, hotspot adjustment, ownership rule, context order.
+2. `${CLAUDE_PLUGIN_ROOT}/design-issues/families/01-coupling.md` - the issues you own: COU-01 to COU-04, with heuristics and false positives.
+
+If `${CLAUDE_PLUGIN_ROOT}` is not substituted in this text, locate the plugin directory (the one containing `.claude-plugin/plugin.json` and `design-issues/`) and read the files from there.
 
 Report only COU-01 to COU-04. Never report, mention or hint at issues owned by other families, even the ones listed in "See also".
 

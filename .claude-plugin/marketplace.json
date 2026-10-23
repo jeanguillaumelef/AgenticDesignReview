@@ -1,0 +1,11 @@
+{
+  "name": "agentic-design-review",
+  "owner": { "name": "jeanguillaumelef" },
+  "plugins": [
+    {
+      "name": "agentic-design-review",
+      "source": "./",
+      "description": "Audit a code base for software design issues and produce an evidence-backed, prioritized report."
+    }
+  ]
+}
