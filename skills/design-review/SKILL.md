@@ -17,7 +17,7 @@ Read `${CLAUDE_PLUGIN_ROOT}/design-issues/conventions.md` (severity rubric, owne
 
 The catalogue has one file per family in `${CLAUDE_PLUGIN_ROOT}/design-issues/families/`. A family is **built** when a skill named `design-review-<family>` exists in `${CLAUDE_PLUGIN_ROOT}/skills/`. Otherwise it is **not built**.
 
-Currently built: `design-review-coupling` (family 01). Detect the rest from the folder, do not rely on this list.
+Currently built: `design-review-coupling` (family 01) and `design-review-cohesion-and-responsibility` (family 02). Detect the rest from the folder, do not rely on this list.
 
 ## 3. Run each built family
 

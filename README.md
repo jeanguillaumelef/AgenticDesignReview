@@ -31,7 +31,7 @@ Optionally, add a `design-context.md` at your repository root to declare your in
 |---|---|---|
 | `/design-review` | Runs all available families and aggregates the report | Built |
 | `/design-review-coupling` | [01 Coupling](design-issues/families/01-coupling.md) | Built |
-| Cohesion and responsibility | [02](design-issues/families/02-cohesion-and-responsibility.md) | Planned |
+| `/design-review-cohesion-and-responsibility` | [02 Cohesion and responsibility](design-issues/families/02-cohesion-and-responsibility.md) | Built |
 | Abstraction and inheritance | [03](design-issues/families/03-abstraction-and-inheritance.md) | Planned |
 | Encapsulation and data | [04](design-issues/families/04-encapsulation-and-data.md) | Planned |
 | Dependency direction and modularity | [05](design-issues/families/05-dependency-direction-and-modularity.md) | Planned |
