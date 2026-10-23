@@ -2,6 +2,45 @@
 
 A set of Claude Code skills that audit a code base to spot software design issues.
 
+## Installation
+
+Requires [Claude Code](https://claude.com/claude-code). Paste both commands:
+
+```
+/plugin marketplace add jeanguillaumelef/AgenticDesignReview
+/plugin install agentic-design-review@agentic-design-review
+```
+
+## Usage
+
+Open Claude Code in the repository you want to audit and run:
+
+```
+/design-review
+```
+
+It runs every available family skill and produces one report: findings grouped by High, Medium and Low, each with file and symbol evidence and a confidence level. The report header states which families were assessed and which were not built yet, so you know what it does not cover. Nothing in your code is modified.
+
+You can also run a single family, for example `/design-review-coupling`.
+
+Optionally, add a `design-context.md` at your repository root to declare your intended architecture and deliberate exceptions. See [the template](design-issues/design-context.template.md).
+
+## Skills
+
+| Skill | Family | Status |
+|---|---|---|
+| `/design-review` | Runs all available families and aggregates the report | Built |
+| `/design-review-coupling` | [01 Coupling](design-issues/families/01-coupling.md) | Built |
+| Cohesion and responsibility | [02](design-issues/families/02-cohesion-and-responsibility.md) | Planned |
+| Abstraction and inheritance | [03](design-issues/families/03-abstraction-and-inheritance.md) | Planned |
+| Encapsulation and data | [04](design-issues/families/04-encapsulation-and-data.md) | Planned |
+| Dependency direction and modularity | [05](design-issues/families/05-dependency-direction-and-modularity.md) | Planned |
+| Knowledge duplication | [06](design-issues/families/06-knowledge-duplication.md) | Planned |
+| Change patterns (git history) | [07](design-issues/families/07-change-patterns.md) | Planned |
+| Domain modelling | [08](design-issues/families/08-domain-modelling.md) | Planned |
+| Test design | [09](design-issues/families/09-test-design.md) | Planned |
+| Error handling | [10](design-issues/families/10-error-handling.md) | Planned |
+
 ## Intent
 
 ### The problem
